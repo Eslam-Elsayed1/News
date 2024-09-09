@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/api/api_manager.dart';
 import 'package:news_app/models/articles_response.dart';
-import 'package:news_app/screens/article_details/article_details_screen.dart';
 import 'package:news_app/screens/home/widgets/news_articles/article_item_view.dart';
 import 'package:news_app/screens/home/widgets/search_appbar/appbar_search_field.dart';
+
+import '../../article_details/article_details_screen.dart';
 
 class SearchArticle extends StatefulWidget {
   static const String routeName = 'search_article';

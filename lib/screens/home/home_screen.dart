@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/news_category.dart';
-import 'package:news_app/screens/home/home_body_contents/categories_fragments.dart';
-import 'package:news_app/screens/home/home_body_contents/category_details.dart';
-import 'package:news_app/screens/home/home_body_contents/search_article.dart';
-import 'package:news_app/screens/home/home_body_contents/settings_tab.dart';
+
 import 'package:news_app/screens/home/widgets/app_drawer/app_drawer.dart';
 
 /// Localization_import
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'home/categories_fragments.dart';
+import 'home/category_details.dart';
+import 'home/search_article.dart';
+import 'home/settings_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home_screen';
@@ -56,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ? const Text("Settings")
                   : (selectedCategory == null)
                       ? Text(
-                          AppLocalizations.of(context)!.app_title,
+                          AppLocalizations.of(context)!.title,
                           style: Theme.of(context).textTheme.titleLarge,
                         )
                       : Text(selectedCategory?.title ?? ""),
