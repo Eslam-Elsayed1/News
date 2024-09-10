@@ -187,16 +187,3 @@ class _ArticleItemState extends State<ArticleItem> {
     );
   }
 }
-      //  Consumer<PaginationProvider>(
-      //         builder: (BuildContext context, PaginationProvider pageProvider,
-      //                 Widget? child) =>
-      //             Container(
-      //           child: (pageProvider.reachEnd)
-      //               ? TextButton(
-      //                   onPressed: () {
-      //                     page++;
-
-      //                     ApiManager.getNewsArticles(widget.sourse.id ?? "",
-      //                         page: page);
-      //                     pageProvider.changeScrollPositionStatus(false);
-      //                     setState(() {});
